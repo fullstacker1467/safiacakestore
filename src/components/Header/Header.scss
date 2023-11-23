@@ -1,0 +1,27 @@
+.little-menu {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: #bea087;
+  overflow: hidden;
+  overflow-x: scroll;
+  a {
+    img {
+      width: 25px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .little-menu {
+    overflow: hidden;
+    justify-content: center;
+    a {
+      img {
+        width: 40px;
+      }
+    }
+  }
+}

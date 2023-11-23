@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(214, 227, 241);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(15, 31, 44);
+}
+
+.container{
+  width: 1400px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:1400px) {
+  .container{
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .bg{
+  height: 100vh;
+  width: 100%;
+  background: url("https://careers.safiabakery.uz/img/vacancies-banner.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+}
+
+.obor:hover{
+  text-decoration: underline;
+}
+
+.orta{
+  transform: translate(-50% , -50%);
+} 
+
+.odd:nth-child(odd){
+  flex-direction: row-reverse;
+}

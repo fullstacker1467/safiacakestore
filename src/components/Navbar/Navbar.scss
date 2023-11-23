@@ -1,0 +1,59 @@
+header {
+  z-index: 213;
+  .container {
+    .ong {
+      .humb {
+        display: none;
+      }
+    }
+  }
+}
+.pasbar {
+  transition: all ease-in 0.3s;
+  z-index: 33;
+  display: none;
+}
+
+@media screen and (max-width: 1020px) {
+  header {
+    .container {
+      .menu {
+        transition: all ease-in 0.3s;
+        position: absolute;
+        z-index: 22;
+        top: 70px;
+        z-index: 20;
+        left: 0;
+        background: #bea087;
+        color: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 92.5vh;
+        a{
+          font-size: 20px;
+        }
+      }
+      .menu.active {
+        left: -100%;
+      }
+      .ong {
+        .humb {
+          display: block;
+        }
+        .korzina,
+        .user {
+          display: none;
+        }
+      }
+    }
+  }
+  .pasbar.active {
+    left: 0;
+  }
+  .pasbar {
+    left: -100%;
+    display: flex;
+  }
+}
